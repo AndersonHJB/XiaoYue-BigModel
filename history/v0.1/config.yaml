@@ -1,0 +1,4 @@
+config:
+  openai:
+    api_key: "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"
+    chat_model: "gpt-3.5-turbo-16k-0613"
