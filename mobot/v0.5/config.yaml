@@ -1,0 +1,16 @@
+config:
+  openai:
+    api_key: "replace to your openai api key"
+    chat_model: "gpt-3.5-turbo-16k-0613"
+    embedding_model: "text-embedding-ada-002"
+
+  pinecone:
+    api_key: "replace to your pinecone api key"
+    environment: "asia-southeast1-gcp-free"
+    index: "mobot"
+
+  tavily:
+    api_key: "replace to your tavily api key"
+
+  self:
+    api_key: "123456"

@@ -1,0 +1,11 @@
+langchain
+fastapi
+uvicorn
+langserve
+openai
+sse_starlette
+tavily-python
+gradio
+pyyaml
+pinecone-client
+tiktoken

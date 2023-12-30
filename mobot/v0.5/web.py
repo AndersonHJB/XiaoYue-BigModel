@@ -1,21 +1,26 @@
 import gradio as gr
-import random
-import time
+import service
+
+s = service.Service()
 
 with gr.Blocks() as demo:
+
+    gr.HTML("""<h1 align="center">小墨 v0.5 - RAG 架构增强</h1>""")
+
     chatbot = gr.Chatbot()
     msg = gr.Textbox()
     clear = gr.ClearButton([msg, chatbot])
 
+
     def respond(message, chat_history):
-        bot_message = random.choice(["How are you?", "I love you", "I'm very hungry"])
+        bot_message = s.retrival_inference_answer(message, chat_history)
+
         chat_history.append((message, bot_message))
-        print(chat_history)
-        time.sleep(2)
+
         return "", chat_history
+
 
     msg.submit(respond, [msg, chatbot], [msg, chatbot])
 
 if __name__ == "__main__":
-    demo.launch()
-
+    demo.launch(share=True, server_name="0.0.0.0")

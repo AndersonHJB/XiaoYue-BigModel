@@ -1,0 +1,16 @@
+config:
+  milvus:
+    host: "127.0.0.1"
+    port: 19530
+    user: "root"
+    password: ""
+
+  m3e:
+    model_name_or_path: "./weights/embedding/m3e-base/"
+
+  llama2:
+    model_name_or_path: "./weights/language/llama2-chinese-chat-7b/"
+
+  qwen:
+    model_name_or_path: "./weights/language/qwen-14b-chat-int4/"
+    api_key: "optional, if you want using online model"

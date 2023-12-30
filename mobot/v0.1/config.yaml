@@ -1,0 +1,4 @@
+config:
+  openai:
+    api_key: "replace to your api key"
+    chat_model: "gpt-3.5-turbo-16k-0613"

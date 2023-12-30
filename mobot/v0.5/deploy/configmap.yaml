@@ -1,0 +1,23 @@
+apiVersion: v1
+data:
+  config.yaml: |-
+    config:
+      openai:
+        api_key: "replace to your api key"
+        chat_model: "gpt-3.5-turbo-16k-0613"
+        embedding_model: "text-embedding-ada-002"
+
+      pinecone:
+        api_key: "replace to your api key"
+        environment: "asia-southeast1-gcp-free"
+        index: "mobot"
+    
+      tavily:
+        api_key: "replace to your api key"
+
+      self:
+        api_key: "replace to your api key"
+kind: ConfigMap
+metadata:
+  name: mobot-v5
+  namespace: chatbot

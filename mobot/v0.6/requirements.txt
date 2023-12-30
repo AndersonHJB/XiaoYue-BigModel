@@ -1,0 +1,15 @@
+openai
+sse_starlette
+tavily-python
+gradio
+pyyaml
+pinecone-client
+tiktoken
+openai
+langchain
+networkx
+numexpr
+langchainhub
+langchain_experimental
+pymysql
+bs4

@@ -1,0 +1,11 @@
+gradio
+pyyaml
+sentence-transformers
+pymilvus
+accelerate
+dashscope
+einops
+transformers_stream_generator
+auto-gptq
+optimum
+tiktoken

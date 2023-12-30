@@ -1,0 +1,6 @@
+gradio
+openai
+pyyaml
+langchain
+pinecone-client
+tiktoken

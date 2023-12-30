@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mobot-v5
+  namespace: chatbot
+spec:
+  internalTrafficPolicy: Cluster
+  ports:
+    - name: http
+      port: 7860
+      protocol: TCP
+      targetPort: 7860
+  selector:
+    app: mobot-v5
+  sessionAffinity: None
+  type: ClusterIP

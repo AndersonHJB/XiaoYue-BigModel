@@ -5,7 +5,7 @@ import config
 
 class Service:
     def __init__(self):
-        # super(Service, self).__init__()
+        super(Service, self).__init__()
         self.util = util.Util()
         self.configs = config.ConfigParser()
 
